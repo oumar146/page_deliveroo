@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8" />
+	<title>
+		Evaluation
+	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/reset.css" />
+	<link rel="stylesheet" href="styles/styles-index.css" />
+	<link rel="stylesheet" href="styles//styles-footer_header.css" />
+</head>
+
+<body>
+	<!------------------Header----------------------->
+
+	<header class="trait_en_bas">
+		<div class="logo"><a href="https://deliveroo.fr/fr/"><img src="images/logo-de-deliveroo.svg"
+					attribut="logo-de-deliveroo" width="100px" /></a></div>
+		<div class="search">
+			<form action="" class="search-bar">
+				<svg height="24" width="24" viewBox="0 0 24 24" role="presentation" focusable="false"
+					class="ccl-2608038983f5b413 ccl-ab78be2f3c0b8a03 ccl-4475ede65a9c319d" style="fill: #abadad;">
+					<path
+						d="M10.5 17C14.0841 17 17 14.0841 17 10.5C17 6.91592 14.0841 4 10.5 4C6.91592 4 4 6.91592 4 10.5C4 14.0841 6.91592 17 10.5 17ZM10.5 2C15.1944 2 19 5.80558 19 10.5C19 12.3368 18.4173 14.0374 17.4268 15.4273L22 20.0049L20.0049 22L15.4272 17.4269C14.0373 18.4173 12.3368 19 10.5 19C5.80558 19 2 15.1944 2 10.5C2 5.80558 5.80558 2 10.5 2Z">
+					</path>
+				</svg>
+				<input type="text" placeholder="Restaurants, commerces,plats" name="q">
+			</form>
+		</div>
+
+		<nav>
+			<ul>
+				<li id="panier">
+					<a href="#">
+						<svg height="24" width="24" viewBox="0 0 24 24" role="presentation" focusable="false"
+							class="test ccl-2608038983f5b413 ccl-ab78be2f3c0b8a03 ccl-728d4bf1d552a771"
+							style="fill:#00ccbc">
+							<path
+								d="M14 15V13H10V15H14ZM15 15H19.1872L19.7172 13H15V15ZM14 12V10H15V12H19.9822L20.5122 10H3.48783L4.01783 12H9V10H10V12H14ZM14 18V16H10V18H14ZM15 18H18.3922L18.9222 16H15V18ZM9 15V13H4.28283L4.81283 15H9ZM9 18V16H5.07783L5.60783 18H9ZM7 8V3H17V8H23L20 20H4L1 8H7ZM9 8H15V5H9V8Z">
+							</path>
+						</svg>0.00 €
+					</a>
+				</li>
+
+				<li class="inscription" id="inscription">
+					<a
+						href="https://deliveroo.fr/fr/login?redirect=%2Ffr%2Frestaurants%2Flyon%2Flyon-centre-ville%3Ffulfillment_method%3DDELIVERY%26geohash%3Du05kq514z5bw">
+						<svg height="24" width="24" viewBox="0 0 24 24" role="presentation" focusable="false"
+							class="ccl-2608038983f5b413 ccl-ab78be2f3c0b8a03 ccl-728d4bf1d552a771" style="fill:#00ccbc">
+							<path
+								d="M3 10L5 8.44444V5H9.42857L12 3L21 10V21H3V10ZM14 19H19V10.9782L12 5.53372L5 10.9782V19H10V14H14V19Z">
+							</path>
+						</svg>Inscription ou connexion
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<svg height="24" width="24" viewBox="0 0 24 24" role="presentation" focusable="false"
+							class="ccl-2608038983f5b413 ccl-ab78be2f3c0b8a03 ccl-728d4bf1d552a771" style="fill:#00ccbc">
+							<path
+								d="M12 3C9.23858 3 7 5.23858 7 8C7 9.93198 8.09575 11.608 9.69967 12.4406C8.35657 12.9598 7.19555 13.8814 6.30036 14.8961C4.94197 16.4359 4 18.4121 4 20L5 21H19L20 20C20 18.4121 19.058 16.4359 17.6996 14.8961C16.8044 13.8814 15.6434 12.9598 14.3003 12.4406C15.9043 11.608 17 9.93198 17 8C17 5.23858 14.7614 3 12 3ZM16.1999 16.2192C17.0137 17.1417 17.5637 18.1562 17.8249 19H6.17507C6.43633 18.1562 6.98632 17.1417 7.80014 16.2192C8.9593 14.9053 10.4584 14 12 14C13.5416 14 15.0407 14.9053 16.1999 16.2192ZM12 11C10.3431 11 9 9.65685 9 8C9 6.34315 10.3431 5 12 5C13.6569 5 15 6.34315 15 8C15 9.65685 13.6569 11 12 11Z">
+							</path>
+						</svg>Votre compte
+					</a>
+				</li>
+			</ul>
+		</nav>
+		</div>
+	</header>
+	<main>
+		<!------section menu header--------->
+		<section id="menu_header" class="trait_en_bas">
+			<!-----------------flèche retour-------------------->
+			<a href="https://deliveroo.fr/fr/restaurants/paris/montreuil-mairie?geohash=u09tzxqum42s"
+				alt="Bouton retour" title="Bouton retour" class="couleur">
+				<img src="images/page2/fleche.png" alt="icone flèche" class="icone_fleche">
+				Retour
+			</a>
+			<div class="menu_header">
+				<!-----------------image -------------------->
+				<img src="images/page2/kebab.jpg" alt="photo kebab">
+				<div class="contenu_milieu_droite">
+					<!-----------------contenu au milieu-------------------->
+					<div class="contenu_milieu">
+						<h1>
+							nan kebab avron
+						</h1>
+						<p id="x">
+							25 - 40 min · Tacos · Sandwichs · Halal<br>
+							À 3.32 km · 8,00 € minimum · 3,99 € de livraison
+						</p>
+						<div>
+							<div class="alignement curseur">
+								<!-----------------icone-------------------->
+								<svg height="24" width="24" viewBox="0 0 24 24" role="presentation" focusable="false"
+									class="ccl-2608038983f5b413 ccl-24025c233c77af94 ccl-4475ede65a9c319d"
+									style="fill: #abadad;">
+									<path
+										d="M12 2C17.5228 2 22 6.47717 22 12C22 17.5228 17.5228 22 12 22C6.47717 22 2 17.5228 2 12C2 6.47717 6.47717 2 12 2ZM12 20C16.4112 20 20 16.4112 20 12C20 7.5888 16.4112 4 12 4C7.5888 4 4 7.5888 4 12C4 16.4112 7.5888 20 12 20ZM11 17V10H13V17H11ZM11.9934 6.69997C12.7444 6.69997 13.2846 7.22697 13.2846 7.91205C13.2846 8.59722 12.7444 9.13738 11.9934 9.13738C11.2556 9.13738 10.7155 8.59722 10.7155 7.91205C10.7155 7.22697 11.2556 6.69997 11.9934 6.69997Z">
+									</path>
+								</svg>
+								<!-----------------texte-------------------->
+								<p class="espacement_texte">
+									Informations<br><span class="petite_police couleur3">Allergènes et plus</span>
+								</p>
+								<!-----------------icone-------------------->
+								<svg height="24" width="24" viewBox="0 0 24 24" role="presentation" focusable="false"
+									class="ccl-2608038983f5b413 ccl-ab78be2f3c0b8a03 ccl-728d4bf1d552a771"
+									style="fill: #00ccbc">
+									<path
+										d="M7.11621 19.1161L8.88398 20.8839L17.7679 12L8.88398 3.11612L7.11621 4.88389L14.2323 12L7.11621 19.1161Z">
+									</path>
+								</svg>
+							</div>
+
+							<div class="alignement espacement_haut curseur">
+								<!-----------------icone-------------------->
+								<svg height="24" width="24" viewBox="0 0 24 24" role="presentation" focusable="false"
+									class="ccl-2608038983f5b413 ccl-24025c233c77af94 ccl-57987e036df67976"
+									style="fill: #00717C">
+									<path d="M12 1L9 9H2L7 14.0001L5 21L12 17.0001L19 21L17 14.0001L22 9H15L12 1Z">
+									</path>
+								</svg>
+								<!-----------------texte-------------------->
+								<p class="espacement_texte">
+									<span class="couleur2">4.3 Très bien</span><br><span
+										class="petite_police couleur3">Voir les
+										500 avis</span>
+								</p>
+								<!-----------------icone-------------------->
+								<svg height="24" width="24" viewBox="0 0 24 24" role="presentation" focusable="false"
+									class="ccl-2608038983f5b413 ccl-ab78be2f3c0b8a03 ccl-728d4bf1d552a771"
+									style="fill: #00ccbc">
+									<path
+										d="M7.11621 19.1161L8.88398 20.8839L17.7679 12L8.88398 3.11612L7.11621 4.88389L14.2323 12L7.11621 19.1161Z">
+									</path>
+								</svg>
+							</div>
+						</div>
+					</div>
+
+					<!-----------------contenu de droite du menu header-------------------->
+					<div class="contenu_droite">
+						<a href="" title="lien pour modifier">
+							<img src="images/page2/velo.png" alt="icone personne sur une vélo">
+							<span class="espacement_texte">Livrée dans 25 - 40 min </span>
+							<span class="couleur">Modifier</span>
+						</a>
+						<!-----------------button-------------------->
+						<div class="espacement_haut">
+							<button value="commande_groupee">
+								<img src="images/page2/item_commande_groupee.png" alt="icone commande groupée">
+								<span class="espacement_texte">Démarrer une commande<br> groupée</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!------section choix--------->
+		<section class="choix petite_police couleur trait_en_bas">
+			<a href="#nan_kebab">Menus nan kebabs 🌯🍟🥤</a>
+			<a href="#burgers" class="cache3">Menus burgers 🍔🍟🥤</a>
+			<a href="#sandwichs" class="cache">Menus sandwichs 🥖🍟🥤</a>
+			<a href="#assiettes" class="cache2">Menus assiettes 🥙 🍟🥤</a>
+			<a href="#partager">À partager 😋💥</a>
+			<a href="#kebab_seul">Nan kebabs seuls 🥙</a>
+			<div class="text_plus">Plus</div>
+		</section>
+		<!------section menu--------->
+		<section id="menu">
+			<!------menu 1--------->
+			<div id="type_menu">
+				<h2 id="nan_kebab">Menus nan kebabs 🌯🍟🥤</h2>
+				<p class="couleur3">
+					Servis avec boisson 33cl 🥤au choix et frites🍟
+				</p>
+			</div>
+			<!----------------liste des boxes-------------->
+			<div class="alignement sapce_box" id="liste_box">
+				<!------------------ligne 1---------------------->
+				<div id="menu_ligne">
+					<!---------------box 1----------->
+					<div class="box alignement">
+						<div class="contenu_box">
+							<h3>Menu Nan Kebab</h3>
+							<p>
+								· Naan fromages , viandes kebab , crudités et sauce<br>
+								<span class="prix">11.20 €</span> <span class="prix_barre">16.00 €</span>
+							</p>
+						</div>
+						<img src="images/page2/photo1_box.jpg" alt="icone flèche" class="photo_box">
+						<button value="plus"><span class="couleur btn_plus">+</span></button>
+					</div>
+					<!---------------box 2----------->
+					<div class="box alignement">
+						<div class="contenu_box">
+							<h3>Menu Chicken</h3>
+							<p>
+								· Naan fromages , viandes kebab , crudités et sauce<br>
+								<span class="prix">11.20 €</span> <span class="prix_barre">16.00 €</span>
+							</p>
+						</div>
+						<img src="images/page2/photo2.jpg" alt="icone flèche" class="photo_box">
+						<button value="plus"><span class="couleur btn_plus">+</span></button>
+					</div>
+					<!---------------box 3----------->
+					<div class="box alignement">
+						<div class="contenu_box">
+							<h3>Menu assiette</h3>
+							<p>
+								· Naan fromages , viandes kebab , crudités et sauce<br>
+								<span class="prix">11.20 €</span> <span class="prix_barre">16.00 €</span>
+							</p>
+						</div>
+						<img src="images/page2/photo3.webp" alt="icone flèche" class="photo_box">
+						<button value="plus"><span class="couleur btn_plus">+</span></button>
+					</div>
+				</div>
+				<!------------------ligne 2---------------------->
+				<div id="menu_ligne">
+					<!---------------box 1----------->
+					<div class="box alignement">
+						<div class="contenu_box">
+							<h3>Menu Nan Steak</h3>
+							<p>
+								· Naan fromages , viandes kebab , crudités et sauce<br>
+								<span class="prix">11.20 €</span> <span class="prix_barre">16.00 €</span>
+							</p>
+						</div>
+						<img src="images/page2/photo4.webp" alt="icone flèche" class="photo_box">
+						<button value="plus"><span class="couleur btn_plus">+</span></button>
+					</div>
+					<!---------------box 2----------->
+					<div class="box alignement">
+						<div class="contenu_box">
+							<h3>Menu classique</h3>
+							<p>
+								· Naan fromages , viandes kebab , crudités et sauce<br>
+								<span class="prix">11.20 €</span> <span class="prix_barre">16.00 €</span>
+							</p>
+						</div>
+						<img src="images/page2/photo5.webp" alt="icone flèche" class="photo_box">
+						<button value="plus"><span class="couleur btn_plus">+</span></button>
+					</div>
+					<!---------------box 3----------->
+					<div class="box alignement">
+						<div class="contenu_box">
+							<h3>Menu galette</h3>
+							<p>
+								· Naan fromages , viandes kebab , crudités et sauce<br>
+								<span class="prix">11.20 €</span> <span class="prix_barre">16.00 €</span>
+							</p>
+						</div>
+						<img src="images/page2/photo1_box.jpg" alt="icone flèche" class="photo_box">
+						<button value="plus"><span class="couleur btn_plus">+</span></button>
+					</div>
+				</div>
+			</div>
+			<!------menu 2--------->
+			<div id="type_menu">
+				<h2 id="burgers">Menus burgers 🍔🍟🥤</h2>
+				<p class="couleur3">
+					Nos menus burger, frites, et boisson au choix
+				</p>
+			</div>
+			<!----------------liste des boxes-------------->
+			<div class="alignement sapce_box" id="liste_box">
+				<!------------------ligne 1---------------------->
+				<div id="menu_ligne">
+					<!---------------box 1----------->
+					<div class="box alignement">
+						<div class="contenu_box">
+							<h3>Menu Nan Kebab</h3>
+							<p>
+								· Naan fromages , viandes kebab , crudités et sauce<br>
+								<span class="prix">11.20 €</span> <span class="prix_barre">16.00 €</span>
+							</p>
+						</div>
+						<img src="images/page2/photo1_box.jpg" alt="icone flèche" class="photo_box">
+						<button value="plus"><span class="couleur btn_plus">+</span></button>
+					</div>
+					<!---------------box 2----------->
+					<div class="box alignement">
+						<div class="contenu_box">
+							<h3>Menu Chicken</h3>
+							<p>
+								· Naan fromages , viandes kebab , crudités et sauce<br>
+								<span class="prix">11.20 €</span> <span class="prix_barre">16.00 €</span>
+							</p>
+						</div>
+						<img src="images/page2/photo2.jpg" alt="icone flèche" class="photo_box">
+						<button value="plus"><span class="couleur btn_plus">+</span></button>
+					</div>
+					<!---------------box 3----------->
+					<div class="box alignement">
+						<div class="contenu_box">
+							<h3>Menu assiette</h3>
+							<p>
+								· Naan fromages , viandes kebab , crudités et sauce<br>
+								<span class="prix">11.20 €</span> <span class="prix_barre">16.00 €</span>
+							</p>
+						</div>
+						<img src="images/page2/photo3.webp" alt="icone flèche" class="photo_box">
+						<button value="plus"><span class="couleur btn_plus">+</span></button>
+					</div>
+				</div>
+				<!------------------ligne 2---------------------->
+				<div id="menu_ligne">
+					<!---------------box 1----------->
+					<div class="box alignement">
+						<div class="contenu_box">
+							<h3>Menu Nan Steak</h3>
+							<p>
+								· Naan fromages , viandes kebab , crudités et sauce<br>
+								<span class="prix">11.20 €</span> <span class="prix_barre">16.00 €</span>
+							</p>
+						</div>
+						<img src="images/page2/photo4.webp" alt="icone flèche" class="photo_box">
+						<button value="plus"><span class="couleur btn_plus">+</span></button>
+					</div>
+					<!---------------box 2----------->
+					<div class="box alignement">
+						<div class="contenu_box">
+							<h3>Menu classique</h3>
+							<p>
+								· Naan fromages , viandes kebab , crudités et sauce<br>
+								<span class="prix">11.20 €</span> <span class="prix_barre">16.00 €</span>
+							</p>
+						</div>
+						<img src="images/page2/photo5.webp" alt="icone flèche" class="photo_box">
+						<button value="plus"><span class="couleur btn_plus">+</span></button>
+					</div>
+					<!---------------box 3----------->
+					<div class="box alignement">
+						<div class="contenu_box">
+							<h3>Menu galette</h3>
+							<p>
+								· Naan fromages , viandes kebab , crudités et sauce<br>
+								<span class="prix">11.20 €</span> <span class="prix_barre">16.00 €</span>
+							</p>
+						</div>
+						<img src="images/page2/photo1_box.jpg" alt="icone flèche" class="photo_box">
+						<button value="plus"><span class="couleur btn_plus">+</span></button>
+					</div>
+				</div>
+			</div>
+			<!------menu 3--------->
+			<div id="type_menu">
+				<h2 id="sandwichs">Menus sandwichs 🥖🍟🥤</h2>
+				<p class="couleur3">
+					Nos menus sandwich, frites, et boisson au choix
+				</p>
+			</div>
+			<!----------------liste des boxes-------------->
+			<div class="alignement sapce_box" id="liste_box">
+				<!------------------ligne 1---------------------->
+				<div id="menu_ligne">
+					<!---------------box 1----------->
+					<div class="box alignement">
+						<div class="contenu_box">
+							<h3>Menu Nan Kebab</h3>
+							<p>
+								· Naan fromages , viandes kebab , crudités et sauce<br>
+								<span class="prix">11.20 €</span> <span class="prix_barre">16.00
+									€</span>
+							</p>
+						</div>
+						<img src="images/page2/photo1_box.jpg" alt="icone flèche" class="photo_box">
+						<button value="plus"><span class="couleur btn_plus">+</span></button>
+					</div>
+					<!---------------box 2----------->
+					<div class="box alignement">
+						<div class="contenu_box">
+							<h3>Menu Chicken</h3>
+							<p>
+								· Naan fromages , viandes kebab , crudités et sauce<br>
+								<span class="prix">11.20 €</span> <span class="prix_barre">16.00
+									€</span>
+							</p>
+						</div>
+						<img src="images/page2/photo2.jpg" alt="icone flèche" class="photo_box">
+						<button value="plus"><span class="couleur btn_plus">+</span></button>
+					</div>
+					<!---------------box 3----------->
+					<div class="box alignement">
+						<div class="contenu_box">
+							<h3>Menu assiette</h3>
+							<p>
+								· Naan fromages , viandes kebab , crudités et sauce<br>
+								<span class="prix">11.20 €</span> <span class="prix_barre">16.00
+									€</span>
+							</p>
+						</div>
+						<img src="images/page2/photo3.webp" alt="icone flèche" class="photo_box">
+						<button value="plus"><span class="couleur btn_plus">+</span></button>
+					</div>
+				</div>
+				<!------------------ligne 2---------------------->
+				<div id="menu_ligne">
+					<!---------------box 1----------->
+					<div class="box alignement">
+						<div class="contenu_box">
+							<h3>Menu Nan Steak</h3>
+							<p>
+								· Naan fromages , viandes kebab , crudités et sauce<br>
+								<span class="prix">11.20 €</span> <span class="prix_barre">16.00
+									€</span>
+							</p>
+						</div>
+						<img src="images/page2/photo4.webp" alt="icone flèche" class="photo_box">
+						<button value="plus"><span class="couleur btn_plus">+</span></button>
+					</div>
+					<!---------------box 2----------->
+					<div class="box alignement">
+						<div class="contenu_box">
+							<h3>Menu classique</h3>
+							<p>
+								· Naan fromages , viandes kebab , crudités et sauce<br>
+								<span class="prix">11.20 €</span> <span class="prix_barre">16.00
+									€</span>
+							</p>
+						</div>
+						<img src="images/page2/photo5.webp" alt="icone flèche" class="photo_box">
+						<button value="plus"><span class="couleur btn_plus">+</span></button>
+					</div>
+					<!---------------box 3----------->
+					<div class="box alignement">
+						<div class="contenu_box">
+							<h3>Menu galette</h3>
+							<p>
+								· Naan fromages , viandes kebab , crudités et sauce<br>
+								<span class="prix">11.20 €</span> <span class="prix_barre">16.00
+									€</span>
+							</p>
+						</div>
+						<img src="images/page2/photo1_box.jpg" alt="icone flèche" class="photo_box">
+						<button value="plus"><span class="couleur btn_plus">+</span></button>
+					</div>
+				</div>
+			</div>
+			<!------menu 4--------->
+			<div id="type_menu">
+				<h2 id="assiettes">Menus assiettes 🥙 🍟🥤🥖</h2>
+				<p class="couleur3">
+					Tous nos assiette sont servis avec frites 🍟 boisson🥤 nan fromage
+				</p>
+			</div>
+			<!----------------liste des boxes-------------->
+			<div class="alignement sapce_box" id="liste_box">
+				<!------------------ligne 1---------------------->
+				<div id="menu_ligne">
+					<!---------------box 1----------->
+					<div class="box alignement">
+						<div class="contenu_box">
+							<h3>Menu Nan Kebab</h3>
+							<p>
+								· Naan fromages , viandes kebab , crudités et sauce<br>
+								<span class="prix">11.20 €</span> <span class="prix_barre">16.00
+									€</span>
+							</p>
+						</div>
+						<img src="images/page2/photo1_box.jpg" alt="icone flèche" class="photo_box">
+						<button value="plus"><span class="couleur btn_plus">+</span></button>
+					</div>
+					<!---------------box 2----------->
+					<div class="box alignement">
+						<div class="contenu_box">
+							<h3>Menu Chicken</h3>
+							<p>
+								· Naan fromages , viandes kebab , crudités et sauce<br>
+								<span class="prix">11.20 €</span> <span class="prix_barre">16.00
+									€</span>
+							</p>
+						</div>
+						<img src="images/page2/photo2.jpg" alt="icone flèche" class="photo_box">
+						<button value="plus"><span class="couleur btn_plus">+</span></button>
+					</div>
+					<!---------------box 3----------->
+					<div class="box alignement">
+						<div class="contenu_box">
+							<h3>Menu assiette</h3>
+							<p>
+								· Naan fromages , viandes kebab , crudités et sauce<br>
+								<span class="prix">11.20 €</span> <span class="prix_barre">16.00
+									€</span>
+							</p>
+						</div>
+						<img src="images/page2/photo3.webp" alt="icone flèche" class="photo_box">
+						<button value="plus"><span class="couleur btn_plus">+</span></button>
+					</div>
+				</div>
+				<!------------------ligne 2---------------------->
+				<div id="menu_ligne">
+					<!---------------box 1----------->
+					<div class="box alignement">
+						<div class="contenu_box">
+							<h3>Menu Nan Steak</h3>
+							<p>
+								· Naan fromages , viandes kebab , crudités et sauce<br>
+								<span class="prix">11.20 €</span> <span class="prix_barre">16.00
+									€</span>
+							</p>
+						</div>
+						<img src="images/page2/photo4.webp" alt="icone flèche" class="photo_box">
+						<button value="plus"><span class="couleur btn_plus">+</span></button>
+					</div>
+					<!---------------box 2----------->
+					<div class="box alignement">
+						<div class="contenu_box">
+							<h3>Menu classique</h3>
+							<p>
+								· Naan fromages , viandes kebab , crudités et sauce<br>
+								<span class="prix">11.20 €</span> <span class="prix_barre">16.00
+									€</span>
+							</p>
+						</div>
+						<img src="images/page2/photo5.webp" alt="icone flèche" class="photo_box">
+						<button value="plus"><span class="couleur btn_plus">+</span></button>
+					</div>
+					<!---------------box 3----------->
+					<div class="box alignement">
+						<div class="contenu_box">
+							<h3>Menu galette</h3>
+							<p>
+								· Naan fromages , viandes kebab , crudités et sauce<br>
+								<span class="prix">11.20 €</span> <span class="prix_barre">16.00
+									€</span>
+							</p>
+						</div>
+						<img src="images/page2/photo1_box.jpg" alt="icone flèche" class="photo_box">
+						<button value="plus"><span class="couleur btn_plus">+</span></button>
+					</div>
+				</div>
+			</div>
+			<!------menu 5--------->
+			<div id="type_menu">
+				<h2 id="partager">À partager 😋💥</h2>
+				<p class="couleur3">
+					A partagé ou pas !! </p>
+			</div>
+			<!----------------liste des boxes-------------->
+			<div class="alignement sapce_box" id="liste_box">
+				<!------------------ligne 1---------------------->
+				<div id="menu_ligne">
+					<!---------------box 1----------->
+					<div class="box alignement">
+						<div class="contenu_box">
+							<h3>Menu Nan Kebab</h3>
+							<p>
+								· Naan fromages , viandes kebab , crudités et sauce<br>
+								<span class="prix">11.20 €</span> <span class="prix_barre">16.00
+									€</span>
+							</p>
+						</div>
+						<img src="images/page2/photo1_box.jpg" alt="icone flèche" class="photo_box">
+						<button value="plus"><span class="couleur btn_plus">+</span></button>
+					</div>
+					<!---------------box 2----------->
+					<div class="box alignement">
+						<div class="contenu_box">
+							<h3>Menu Chicken</h3>
+							<p>
+								· Naan fromages , viandes kebab , crudités et sauce<br>
+								<span class="prix">11.20 €</span> <span class="prix_barre">16.00
+									€</span>
+							</p>
+						</div>
+						<img src="images/page2/photo2.jpg" alt="icone flèche" class="photo_box">
+						<button value="plus"><span class="couleur btn_plus">+</span></button>
+					</div>
+					<!---------------box 3----------->
+					<div class="box alignement">
+						<div class="contenu_box">
+							<h3>Menu assiette</h3>
+							<p>
+								· Naan fromages , viandes kebab , crudités et sauce<br>
+								<span class="prix">11.20 €</span> <span class="prix_barre">16.00
+									€</span>
+							</p>
+						</div>
+						<img src="images/page2/photo3.webp" alt="icone flèche" class="photo_box">
+						<button value="plus"><span class="couleur btn_plus">+</span></button>
+					</div>
+				</div>
+				<!------------------ligne 2---------------------->
+				<div id="menu_ligne">
+					<!---------------box 1----------->
+					<div class="box alignement">
+						<div class="contenu_box">
+							<h3>Menu Nan Steak</h3>
+							<p>
+								· Naan fromages , viandes kebab , crudités et sauce<br>
+								<span class="prix">11.20 €</span> <span class="prix_barre">16.00
+									€</span>
+							</p>
+						</div>
+						<img src="images/page2/photo4.webp" alt="icone flèche" class="photo_box">
+						<button value="plus"><span class="couleur btn_plus">+</span></button>
+					</div>
+					<!---------------box 2----------->
+					<div class="box alignement">
+						<div class="contenu_box">
+							<h3>Menu classique</h3>
+							<p>
+								· Naan fromages , viandes kebab , crudités et sauce<br>
+								<span class="prix">11.20 €</span> <span class="prix_barre">16.00
+									€</span>
+							</p>
+						</div>
+						<img src="images/page2/photo5.webp" alt="icone flèche" class="photo_box">
+						<button value="plus"><span class="couleur btn_plus">+</span></button>
+					</div>
+					<!---------------box 3----------->
+					<div class="box alignement">
+						<div class="contenu_box">
+							<h3>Menu galette</h3>
+							<p>
+								· Naan fromages , viandes kebab , crudités et sauce<br>
+								<span class="prix">11.20 €</span> <span class="prix_barre">16.00
+									€</span>
+							</p>
+						</div>
+						<img src="images/page2/photo1_box.jpg" alt="icone flèche" class="photo_box">
+						<button value="plus"><span class="couleur btn_plus">+</span></button>
+					</div>
+				</div>
+			</div>
+			<!------menu 6--------->
+			<div id="type_menu">
+				<h2 id="kebab_seul">Nan kebabs seuls 🥙</h2>
+				<p class="couleur3">
+					Sandwichs seuls!
+				</p>
+			</div>
+			<!----------------liste des boxes-------------->
+			<div class="alignement sapce_box" id="liste_box">
+				<!------------------ligne 1---------------------->
+				<div id="menu_ligne">
+					<!---------------box 1----------->
+					<div class="box alignement">
+						<div class="contenu_box">
+							<h3>Menu Nan Kebab</h3>
+							<p>
+								· Naan fromages , viandes kebab , crudités et sauce<br>
+								<span class="prix">11.20 €</span> <span class="prix_barre">16.00
+									€</span>
+							</p>
+						</div>
+						<img src="images/page2/photo1_box.jpg" alt="icone flèche" class="photo_box">
+						<button value="plus"><span class="couleur btn_plus">+</span></button>
+					</div>
+					<!---------------box 2----------->
+					<div class="box alignement">
+						<div class="contenu_box">
+							<h3>Menu Chicken</h3>
+							<p>
+								· Naan fromages , viandes kebab , crudités et sauce<br>
+								<span class="prix">11.20 €</span> <span class="prix_barre">16.00
+									€</span>
+							</p>
+						</div>
+						<img src="images/page2/photo2.jpg" alt="icone flèche" class="photo_box">
+						<button value="plus"><span class="couleur btn_plus">+</span></button>
+					</div>
+					<!---------------box 3----------->
+					<div class="box alignement">
+						<div class="contenu_box">
+							<h3>Menu assiette</h3>
+							<p>
+								· Naan fromages , viandes kebab , crudités et sauce<br>
+								<span class="prix">11.20 €</span> <span class="prix_barre">16.00
+									€</span>
+							</p>
+						</div>
+						<img src="images/page2/photo3.webp" alt="icone flèche" class="photo_box">
+						<button value="plus"><span class="couleur btn_plus">+</span></button>
+					</div>
+				</div>
+				<!------------------ligne 2---------------------->
+				<div id="menu_ligne">
+					<!---------------box 1----------->
+					<div class="box alignement">
+						<div class="contenu_box">
+							<h3>Menu Nan Steak</h3>
+							<p>
+								· Naan fromages , viandes kebab , crudités et sauce<br>
+								<span class="prix">11.20 €</span> <span class="prix_barre">16.00
+									€</span>
+							</p>
+						</div>
+						<img src="images/page2/photo4.webp" alt="icone flèche" class="photo_box">
+						<button value="plus"><span class="couleur btn_plus">+</span></button>
+					</div>
+					<!---------------box 2----------->
+					<div class="box alignement">
+						<div class="contenu_box">
+							<h3>Menu classique</h3>
+							<p>
+								· Naan fromages , viandes kebab , crudités et sauce<br>
+								<span class="prix">11.20 €</span> <span class="prix_barre">16.00
+									€</span>
+							</p>
+						</div>
+						<img src="images/page2/photo5.webp" alt="icone flèche" class="photo_box">
+						<button value="plus"><span class="couleur btn_plus">+</span></button>
+					</div>
+					<!---------------box 3----------->
+					<div class="box alignement">
+						<div class="contenu_box">
+							<h3>Menu galette</h3>
+							<p>
+								· Naan fromages , viandes kebab , crudités et sauce<br>
+								<span class="prix">11.20 €</span> <span class="prix_barre">16.00
+									€</span>
+							</p>
+						</div>
+						<img src="images/page2/photo1_box.jpg" alt="icone flèche" class="photo_box">
+						<button value="plus"><span class="couleur btn_plus">+</span></button>
+					</div>
+				</div>
+		</section>
+	</main>
+	<!-------------------------Footer--------------------------------------->
+	<footer>
+		<div class="blocs">
+			<div>
+				<h3>Découvrir Deliveroo</h3>
+				<ul>
+					<li><a href="#"> Investissurs</a></li>
+					<li><a href="#"> A propos</a></li>
+					<li><a href="#"> Vente à emporter</a></li>
+					<li><a href="#"> Voir plus</a></li>
+					<li><a href="#"> Espace presse</a></li>
+					<li><a href="#"> Blog Tech</a></li>
+					<li><a href="#"> Blog Design</a></li>
+					<li><a href="#"> Nous rejoindre</a></li>
+					<li><a href="#"> Inscription restaurant</a></li>
+
+				</ul>
+			</div>
+			<div>
+
+				<h3>Mention légales</h3>
+				<ul>
+					<li><a href="#"> Mention légales</a></li>
+					<li><a href="#"> Confidentialité</a></li>
+					<li><a href="#"> Cookies</a></li>
+					<li><a href="#"> Speak Up</a></li>
+					<li><a href="#"> Classement de nos partenaires</a></li>
+					<li><a href="#"> Demande d'information d'autorités publiques</a></li>
+				</ul>
+			</div>
+
+			<div>
+				<h3>Aide</h3>
+				<ul>
+					<li><a href="#"> Nous contacter</a></li>
+					<li><a href="#"> FAQ</a></li>
+					<li><a href="#"> Types de cuisine</a></li>
+				</ul>
+
+			</div>
+			<div class="badge">
+				<h3>Gardez Deliveroo dans votre poche </h3>
+				<ul>
+					<!--<li><button value="telecharger sur ios"><img src="images/logo apple.png" alt="logo apple" />
+						<span class="espacement_texte" > Télechager dans l'App Store</span> </button></li>
+						<li><button class="btn"> DISPONIBLE SUR Google Play </button></li>-->
+					<li>
+						<a href="https://apps.apple.com/gb/app/deliveroo-food-delivery-app/id1001501844?mt=8"
+							target="_blank">
+							<img src="images/Download_on_the_App_Store_Badge_FR_RGB_blk_100517.svg" alt="app store"
+								width="135px" />
+						</a>
+					</li>
+					<li>
+						<a href="https://play.google.com/store/search?q=deliveroo&c=apps" target="_blank">
+							<img src="images/google-play-badge.png" alt="google" width="135px" />
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="socials">
+			<ul>
+				<li class="facebook">
+					<a href="https://www.facebook.com/DeliverooFR/" target="_blank">
+						<svg height="24" width="24" viewBox="0 0 24 24" role="presenation" focusable="false"
+							class="ccl-2608038983f5b413 ccl-24025c233c77af94">
+							<path
+								d="M22 12C22 6.47715 17.5229 2 12 2C6.47715 2 2 6.47715 2 12C2 16.9913 5.65686 21.1283 10.4375 21.8785V14.8906H7.89844V12H10.4375V9.79688C10.4375 7.29063 11.9304 5.90625 14.2146 5.90625C15.3087 5.90625 16.4531 6.10156 16.4531 6.10156V8.5625H15.1921C13.9499 8.5625 13.5625 9.33334 13.5625 10.1242V12H16.3359L15.8926 14.8906H13.5625V21.8785C18.3431 21.1283 22 16.9913 22 12Z">
+							</path>
+						</svg>
+					</a>
+				</li>
+				<li class="twitter">
+					<a href="https://twitter.com/Deliveroo_FR" target="_blank">
+						<svg height="24" width="24" viewBox="0 0 24 24" role="presentation" focusable="false"
+							class="ccl-2608038983f5b413 ccl-24025c233c77af94">
+							<path
+								d="M23 5.89379C22.2644 6.21496 21.4731 6.43215 20.6431 6.52997C21.4906 6.02976 22.1413 5.23853 22.4475 4.29533C21.655 4.75801 20.7763 5.09394 19.8419 5.27545C19.0931 4.49037 18.0269 4 16.8469 4C14.5806 4 12.7437 5.80827 12.7437 8.03922C12.7437 8.35547 12.78 8.66372 12.85 8.95966C9.43938 8.79108 6.41625 7.18277 4.3925 4.73893C4.03937 5.33574 3.83687 6.02976 3.83687 6.76993C3.83687 8.17089 4.56125 9.40758 5.66187 10.1317C4.98937 10.1108 4.35688 9.92932 3.80375 9.62661C3.80313 9.64384 3.80312 9.66045 3.80312 9.67768C3.80312 11.6348 5.2175 13.2671 7.095 13.6381C6.75062 13.7304 6.38812 13.7797 6.01375 13.7797C5.74938 13.7797 5.4925 13.7544 5.24188 13.7077C5.76375 15.3123 7.27938 16.4801 9.075 16.5127C7.67062 17.5962 5.90125 18.2416 3.97875 18.2416C3.6475 18.2416 3.32125 18.2225 3 18.1856C4.81562 19.3312 6.9725 20 9.29 20C16.8375 20 20.9644 13.8449 20.9644 8.50744C20.9644 8.33209 20.9606 8.15797 20.9525 7.98446C21.7544 7.41534 22.45 6.7041 23 5.89379Z">
+							</path>
+						</svg>
+					</a>
+				</li>
+				<li class="instagram">
+					<a href="https://www.instagram.com/deliveroo_fr/" target="_blank">
+						<svg height="24" width="24" viewBox="0 0 24 24" role="presentation" focusable="false"
+							class="ccl-2608038983f5b413 ccl-24025c233c77af94">
+							<path
+								d="M11.9969 2.00632C14.7118 2.00632 15.0523 2.01783 16.1185 2.06648C17.1826 2.11501 17.9093 2.28402 18.5452 2.53116C19.2025 2.78659 19.76 3.12842 20.3158 3.68417C20.8716 4.23997 21.2134 4.79747 21.4689 5.45485C21.716 6.09072 21.885 6.81743 21.9335 7.88148C21.9822 8.94775 21.9937 9.28818 21.9937 12.0032C21.9937 14.7181 21.9822 15.0586 21.9335 16.1248C21.885 17.1889 21.716 17.9156 21.4689 18.5515C21.2134 19.2089 20.8716 19.7664 20.3158 20.3222C19.76 20.8779 19.2025 21.2197 18.5452 21.4752C17.9093 21.7223 17.1826 21.8913 16.1185 21.9398C15.0523 21.9885 14.7118 22 11.9969 22C9.28187 22 8.94143 21.9885 7.87516 21.9398C6.81111 21.8913 6.0844 21.7223 5.44853 21.4752C4.79115 21.2197 4.23365 20.8779 3.67786 20.3222C3.1221 19.7664 2.78028 19.2089 2.52484 18.5515C2.2777 17.9156 2.10869 17.1889 2.06016 16.1248C2.01151 15.0586 2 14.7181 2 12.0032C2 9.28818 2.01151 8.94775 2.06016 7.88148C2.10869 6.81743 2.2777 6.09072 2.52484 5.45485C2.78028 4.79747 3.1221 4.23997 3.67786 3.68417C4.23365 3.12842 4.79115 2.78659 5.44853 2.53116C6.0844 2.28402 6.81111 2.11501 7.87516 2.06648C8.94143 2.01783 9.28187 2.00632 11.9969 2.00632ZM11.9969 3.80755C9.32758 3.80755 9.01139 3.81775 7.95726 3.86584C6.98258 3.91029 6.45325 4.07314 6.10099 4.21005C5.63437 4.3914 5.30135 4.60802 4.95155 4.95786C4.60171 5.30767 4.38508 5.64068 4.20373 6.10731C4.06683 6.45957 3.90397 6.9889 3.85952 7.96358C3.81143 9.01771 3.80123 9.3339 3.80123 12.0032C3.80123 14.6724 3.81143 14.9886 3.85952 16.0427C3.90397 17.0174 4.06683 17.5468 4.20373 17.899C4.38508 18.3656 4.60175 18.6987 4.95155 19.0485C5.30135 19.3983 5.63437 19.6149 6.10099 19.7963C6.45325 19.9332 6.98258 20.096 7.95726 20.1405C9.01127 20.1886 9.32738 20.1988 11.9969 20.1988C14.6663 20.1988 14.9825 20.1886 16.0364 20.1405C17.0111 20.096 17.5404 19.9332 17.8927 19.7963C18.3593 19.6149 18.6923 19.3983 19.0421 19.0485C19.392 18.6987 19.6086 18.3656 19.79 17.899C19.9269 17.5468 20.0897 17.0174 20.1342 16.0427C20.1823 14.9886 20.1925 14.6724 20.1925 12.0032C20.1925 9.3339 20.1823 9.01771 20.1342 7.96358C20.0897 6.9889 19.9269 6.45957 19.79 6.10731C19.6086 5.64068 19.392 5.30767 19.0421 4.95786C18.6923 4.60802 18.3593 4.3914 17.8927 4.21005C17.5404 4.07314 17.0111 3.91029 16.0364 3.86584C14.9823 3.81775 14.6661 3.80755 11.9969 3.80755ZM11.9969 15.3354C13.8372 15.3354 15.3291 13.8435 15.3291 12.0032C15.3291 10.1628 13.8372 8.67088 11.9969 8.67088C10.1565 8.67088 8.66456 10.1628 8.66456 12.0032C8.66456 13.8435 10.1565 15.3354 11.9969 15.3354ZM11.9969 6.86965C14.832 6.86965 17.1304 9.16798 17.1304 12.0032C17.1304 14.8383 14.832 17.1367 11.9969 17.1367C9.16167 17.1367 6.86333 14.8383 6.86333 12.0032C6.86333 9.16798 9.16167 6.86965 11.9969 6.86965ZM18.5328 6.66683C18.5328 7.32937 17.9957 7.86644 17.3332 7.86644C16.6707 7.86644 16.1336 7.32937 16.1336 6.66683C16.1336 6.00429 16.6707 5.46719 17.3332 5.46719C17.9957 5.46719 18.5328 6.00429 18.5328 6.66683Z">
+							</path>
+						</svg>
+					</a>
+				</li>
+			</ul>
+			<p>© 2023 Deliveroo</p>
+		</div>
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,330 @@
+body {
+  font-family: plex-sans, sans-serif;
+  color: #2e3333;
+  line-height: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  width: 100%;
+  min-width: 415px;
+}
+/***************section*******************/
+section {
+  padding-bottom: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+  margin: 0px;
+}
+.trait_en_bas {
+  border-bottom: 1px solid #e8ebeb;
+}
+/**********Titres**********/
+h1 {
+  font-family: stratos, sans-serif;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: bold;
+  width: 100%;
+  line-height: 100%;
+}
+h2 {
+  font-family: stratos, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+.contenu_box h3 {
+  font-family: stratos, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+}
+/***********couleur et fonts*****************/
+.couleur {
+  color: #00ccbc;
+}
+.couleur2 {
+  color: #00717c;
+}
+.couleur3 {
+  color: #585c5c;
+}
+.petite_police {
+  font-size: 14px;
+}
+/***********images et icones**************/
+img[src="images/page2/kebab.jpg"] {
+  border-radius: 5px;
+  width: 450px;
+  height: 300px;
+  background-color: red;
+}
+
+main svg {
+  margin-top: 12px;
+}
+img[src="images/page2/fleche.png"] {
+  width: 17px;
+  height: 12px;
+}
+img[src="images/page2/item_commande_groupee.png"] {
+  width: 17px;
+  height: 17px;
+}
+img[src="images/page2/velo.png"] {
+  width: 35px;
+  height: 27px;
+}
+img[src="images/page2/item_information.png"] {
+  width: 20px;
+  height: 20px;
+}
+img[src="images/page2/acolade.png"] {
+  width: 20px;
+  height: 20px;
+}
+img[src="images/page2/etoile.png"] {
+  width: 20px;
+  height: 20px;
+}
+/*********header menu***********/
+a[alt="Bouton retour"] {
+  text-decoration: none;
+  display: flex;
+  gap: 10%;
+  padding: 1% 0%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 5%;
+  height: 5%;
+  align-items: center;
+}
+.menu_header {
+  display: flex;
+  align-items: center;
+}
+div[class="contenu_milieu"] {
+  width: 100%;
+}
+.contenu_milieu {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+.contenu_milieu_droite {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: 2%;
+  gap: 150px;
+}
+.contenu_droite {
+  width: 100%;
+}
+.alignement {
+  display: flex;
+}
+.curseur {
+  cursor: pointer;
+}
+a[title="lien pour modifier"] {
+  text-decoration: none;
+  color: black;
+}
+button[value="commande_groupee"] {
+  padding: 2% 12%;
+  background-color: white;
+  font-size: 16px;
+  border: 1px solid #e8ebeb;
+  border-radius: 5px;
+  font-weight: 400;
+  cursor: pointer;
+}
+/**********gestion des espaces**********/
+
+.espacement_texte {
+  margin: 0px 10px;
+}
+.espacement_haut {
+  margin-top: 10px;
+}
+
+/****section choix***********/
+.choix {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 40px;
+  align-items: center;
+  padding: 20px 0px;
+}
+.choix :first-child {
+  margin-left: 65px;
+}
+.choix a:hover {
+  color: #38dfee;
+}
+.text_plus {
+  margin-left: 100px;
+  cursor: pointer;
+}
+.choix a {
+  text-decoration: none;
+  color: #00ccbc;
+}
+/***************menu*****************/
+section[id="menu"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  padding-bottom: 60px;
+}
+.btn_plus {
+  font-size: 2em;
+}
+.box {
+  padding: 12px 16px;
+  width: 450px;
+  height: 150px;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.box:hover {
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.1);
+}
+.sapce_box {
+  flex-direction: column;
+  gap: 15px;
+}
+.photo_box {
+  width: 150px;
+  height: 130px;
+  border-radius: 5px;
+}
+.contenu_box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 13px;
+  margin-right: 15px;
+}
+button[value="plus"] {
+  cursor: pointer;
+  padding: 40px 20px;
+  color: #00ccbc;
+  border: 1px solid #e8ebeb;
+  background-color: white;
+  margin-left: 15px;
+}
+.prix {
+  color: #cc3a2f;
+}
+.prix_barre {
+  text-decoration: line-through;
+}
+#menu_ligne {
+  display: flex;
+  gap: 40px;
+}
+#type_menu {
+  margin-bottom: 20px;
+}
+#prix {
+  margin: 10px;
+}
+/***********************responsivité***********************/
+@media screen and (max-width: 1454px) {
+  .choix :first-child {
+    margin-left: 25px;
+  }
+  /***************menu header****************/
+  .contenu_milieu_droite {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+  }
+  .contenu_milieu {
+    width: 5px;
+  }
+
+  img[src="images/page2/kebab.jpg"] {
+    height: 350px;
+  }
+  /***********choix menu*************/
+  .cache {
+    display: none;
+  }
+  .text_plus {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  /***********menu****************/
+  #liste_box {
+    gap: 5px;
+  }
+  section {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  div[class="box alignement"] {
+    padding: 12px 16px;
+    width: 100%;
+    height: 40%;
+  }
+  button[value="plus"] {
+    padding: 20px 10px;
+    margin-top: 2px;
+  }
+}
+/**************box*******************/
+@media screen and (max-width: 1253px) {
+  #menu_ligne {
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 1198px) {
+  #menu_ligne {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  #menu_ligne {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .photo_box {
+    width: 100px;
+    height: 100px;
+    margin-top: 17px;
+  }
+}
+/***********************************************/
+@media screen and (max-width: 982px) {
+  .menu_header img {
+    display: none;
+  }
+}
+/*******************choix**********************/
+@media screen and (max-width: 1108px) {
+  a[href="#kebab_seul"] {
+    display: none;
+  }
+}
+@media screen and (max-width: 920px) {
+  a[href="#assiettes"]{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 687px) {
+  .choix {
+    display: none;
+  }
+}
